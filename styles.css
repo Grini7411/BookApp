@@ -1,0 +1,168 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #17141d;
+    color: white;
+    font-family: 'DM Mono', monospace;
+}
+h1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchTerm {
+    height: 30px;
+    width: 500px;
+    border: 0;
+    outline: 0;
+    border-radius: 5em;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+#searchBtn {
+    background-color: salmon;
+    border-radius: 20px;
+    height: 30px;
+    font-size: 19px;
+    color: white;
+    margin-left: -74px;
+    border: 0;
+    z-index: 1000;
+    cursor: pointer;
+}
+.danger{
+    color: yellow;
+    display: none;
+}
+
+.danger p {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-list {
+    display: flex;
+    padding: 3rem;
+    min-height: 50vh;
+    overflow-x: scroll;
+}
+
+.card-list::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+.card-list::-webkit-scrollbar-thumb {
+    background: #201c29;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+}
+
+.card-list::-webkit-scrollbar-track {
+    background: linear-gradient(90deg,#201c29,#201c29 1px,#17141d 0,#17141d);
+}
+
+
+.card {
+    flex: 1;
+    width: 400px;
+    min-width: 250px;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background: #17141d;
+    box-shadow: -1rem 0 3rem #000;
+    display: flex;
+    flex-direction: column;
+    transition: .2s;
+    margin: 0;
+    scroll-snap-align: start;
+    clear: both;
+    position: relative;
+}
+
+.card img:hover {
+    opacity: 0.5;
+}
+
+.card:focus-within~.card, .card:hover~.card {
+    transform: translateX(100px);
+}
+
+.card:hover {
+    transform: translateY(-1rem);
+}
+
+.card:not(:first-child) {
+    margin-left: -130px;
+}
+.book-name, .book-author {
+    word-break: break-word;
+}
+
+@media only screen and (max-width: 480px) {
+    .card-list {
+        height: 50vh;
+    }
+    #searchTerm {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    h4, .book-author, by {
+       margin-bottom: 5px;
+    }
+    #searchTerm {
+        width: 80%;
+    }
+
+    .card-list::-webkit-scrollbar-track{
+
+    }
+}
+
+
+
+
+
+
+/*.img-wrap {*/
+/*    position: relative;*/
+/*    height: 90%;*/
+/*    width: 90%;*/
+/*}*/
+
+/*.img-desc {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    visibility: hidden;*/
+/*    opacity: 0;*/
+/*}*/
+
+/*.img-wrap:hover .img-desc {*/
+/*    visibility: visible;*/
+/*    opacity: 1;*/
+
+/*}*/
