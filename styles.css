@@ -140,29 +140,3 @@ h1{
     }
 }
 
-
-
-
-
-
-/*.img-wrap {*/
-/*    position: relative;*/
-/*    height: 90%;*/
-/*    width: 90%;*/
-/*}*/
-
-/*.img-desc {*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    bottom: 0;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    visibility: hidden;*/
-/*    opacity: 0;*/
-/*}*/
-
-/*.img-wrap:hover .img-desc {*/
-/*    visibility: visible;*/
-/*    opacity: 1;*/
-
-/*}*/

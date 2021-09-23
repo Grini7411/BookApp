@@ -7,9 +7,6 @@ const ERROR_MSGS = {
 }
 
 
-window.addEventListener('load', () => {
-    // populateBookCards(mock.items);
-})
 
 function populateBookCards(books) {
     const cardList = document.getElementById('main');
