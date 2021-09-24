@@ -12,16 +12,22 @@
         <button id="searchBtn" onclick="searchBooks()">Search</button>
     </div>
     <div class="danger">
-        <p >Need a search term!!</p>
+        <p id="errMsg">Need a search term!!</p>
+    </div>
+    <div class="spinner-container">
+        <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
     </div>
 
-    <section id="main" class="card-list"></section>
+    <section id="main" class="card-list">
+
+    </section>
     <template id="cardTemp">
         <article class="card">
             <img class="book-img" src="" alt="book img">
             <h4 class="book-name"></h4>
             <p class="by"><i></i></p>
             <p class="book-author"></p>
+            <p class="book-desc"></p>
         </article>
     </template>
     <script src="main.js"></script>
